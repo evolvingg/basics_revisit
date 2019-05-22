@@ -14,10 +14,10 @@ const Navigation = (props) => (
 class App extends React.Component {
   render() {
     return (
-      <React.Fragment>
+      <div className="page-container">
         <Navigation />
         <Router />
-      </React.Fragment>
+      </div>
     );
   }
 }
