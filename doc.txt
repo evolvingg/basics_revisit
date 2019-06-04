@@ -1,0 +1,16 @@
+const initialState = {
+   count:40 
+};
+
+function reducer(state= initialState ,action){
+   return state; 
+}
+//reducer returns state
+
+const store = createStore(reducer) // accepts reducer function
+
+const App = () => {
+	<Provider store={store}>  <!-- store made available to app -->
+	<container comp/>
+	</Provider>
+}
